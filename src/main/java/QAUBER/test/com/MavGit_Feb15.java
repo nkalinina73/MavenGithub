@@ -11,9 +11,12 @@ public class MavGit_Feb15 {
         mg.get("https://www.google.com/");
         Thread.sleep(3000);
 
-        mg.findElement(By.id("q")).sendKeys("melanie trump");
+        mg.findElement(By.xpath("//*[@id=\"lst-ib\"]")).sendKeys("ivanka trump");
         Thread.sleep(3000);
 
-        mg.close();
+        mg.findElement(By.xpath("//*[@id=\"lst-ib\"]")).submit();
+        Thread.sleep(3000);
+
+        //mg.close();
     }
 }
