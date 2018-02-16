@@ -17,6 +17,9 @@ public class MavGit_Feb15 {
         mg.findElement(By.xpath("//*[@id=\"lst-ib\"]")).submit();
         Thread.sleep(2000);
 
+        mg.findElement(By.xpath("//*[@id=\"lst-ib\"]")).sendKeys("dogs");
+        Thread.sleep(2000);
+
         //mg.close();
     }
 }
